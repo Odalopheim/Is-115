@@ -13,7 +13,7 @@
     // Filpeker
     $fp = fopen($mappe . $filnavn, "w");
 
-    // Fildata
+    // Fildata // \r\n er en måte å lage lingjeskift på tvers av plattformer
     $tekst  = "Data ble skrevet til fil: " . date('d.m.Y k\l. H:i:s') . " \r\n";
     $tekst .= "Filnavn: " . $mappe . $filnavn;
     
