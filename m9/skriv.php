@@ -10,10 +10,10 @@
             die("Kan ikke opprette mappe... " . $mappe);
     }
     
-    // Filpeker
+    // Filpeker - fileopen
     $fp = fopen($mappe . $filnavn, "w");
 
-    // Fildata // \r\n er en måte å lage lingjeskift på tvers av plattformer
+    // Fildata
     $tekst  = "Data ble skrevet til fil: " . date('d.m.Y k\l. H:i:s') . " \r\n";
     $tekst .= "Filnavn: " . $mappe . $filnavn;
     
