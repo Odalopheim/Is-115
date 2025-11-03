@@ -60,7 +60,7 @@ foreach($arr as $line)
 
 <?php
 //hente en ekstern fil igjennom en URL som en array
-$arr = file('https://www.google.com') or die('ERROR: cannot find file');
+$arr = file('https://www.vg.no/') or die('ERROR: cannot find file');
 foreach($arr as $line)
 {
 	echo $line;
