@@ -67,4 +67,3 @@ echo "Passord (gyldig): " . $validator->validerPassord($passordGyldig) . "<br><b
 echo "Mobil (feil): " . $validator->validerMobil($mobilFeil) . "<br>";
 echo "Mobil (gyldig): " . $validator->validerMobil($mobilGyldig) . "<br>";
 ?>
-s
