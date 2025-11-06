@@ -21,7 +21,7 @@
 
 
             try {
-                //for de som bruker annen port enn standard 3306
+                //oppretter en ny tilkoblig til databasen ved hjelp av PDO
                 $pdo = new PDO($dsn, self::$user, self::$pass);
 
                 // Setter feilhåndtering til å kaste unntak
@@ -48,9 +48,10 @@
 
         <?php
             try {
+                // Opprett databaseforbindelse
                 $pdo = Database::connect();
 
-                // Bytt ut 'din_tabell' med navnet på tabellen du vil hente
+                //Hetter alle radene fra tabellen 'users'
                 $sql = "SELECT * FROM users";
                 $stmt = $pdo->query($sql);
                 $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -58,11 +59,12 @@
                 if (!$rows) {
                     echo "<p>Ingen rader funnet i tabellen.</p>";
                 } else {
-                    // Lag kolonneoverskrifter fra nøklene i første rad
+                    // Lag kolonneoverskrifter fra første rad
                     $headers = array_keys($rows[0]);
-
+        
                     echo "<table>";
                     echo "<thead><tr>";
+                    //htmlspecialchars for å unngå XSS angrep
                     foreach ($headers as $h) {
                         echo "<th>" . htmlspecialchars($h) . "</th>";
                     }
@@ -77,6 +79,7 @@
                     }
                     echo "</tbody></table>";
                 }
+                
             } catch (Exception $e) {
                 echo "<p>Feil ved henting av data.</p>";
             }
