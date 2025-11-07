@@ -40,7 +40,7 @@ function k($str) {
                 // Opprett databaseforbindelse
                 $pdo = Database::connect();
 
-                //Henter alle radene fra tabbelen users 4 som er en måned eller nyere
+                //Henter alle radene fra tabbelen users 4 som viser brukerens preferanser etter preferanse
                 $sql = "SELECT u.fnavn,u.enavn,
                 GROUP_CONCAT(p.description SEPARATOR ', ') AS preferanser FROM user4 u
                     JOIN 
