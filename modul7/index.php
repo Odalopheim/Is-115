@@ -11,8 +11,8 @@
     <a href="oppg7_1.php"> Oppgave 1 – Koble til en database</a><br>
     <a  href="oppg7_2.php"> Oppgave 2 – Lagre oppgave4_2 i databasen</a><br>
     <a href="oppg7_3.php"> Oppgave 3– Lage sikkerhetskopier av databasen</a><br>
-    <a href="oppg7_4.php"> Oppgave 4 – Finn unik verdi (array)</a><br>
-    <a href="oppg7_5.php"> Oppgave 5 – Anagram-sjekk (funksjon)</a><br>
+    <a href="oppg7_4.php"> Oppgave 4 – Hente ut alle brukerane som er en måned eller nyere</a><br>
+    <a href="oppg7_5.php"> Oppgave 5 – prefferanse til brukeren</a><br>
   </div>
 </body>
 </html>  
