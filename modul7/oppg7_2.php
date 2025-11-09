@@ -71,7 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <h2>Registreringsskjema</h2>
 
-<!-- Viser suksessmelding på en brukervennlig måte -->
+<!-- Viser at brukeren er registrert på en brukervennlig måte -->
 <?php if ($registrert): ?>
     <div style="color: green; font-weight: bold;">
         Bruker er registrert!
