@@ -40,8 +40,9 @@ class User {
     // Vær robust hvis kolonnene ikke finnes i databasen (bakoverkompatibilitet).
     $failedAttempts = isset($user['failed_attempts']) ? (int)$user['failed_attempts'] : 0;
     $lastFailed = isset($user['last_failed']) ? $user['last_failed'] : null;
-    if ($failedAttempts >= 5 && $lastFailed && strtotime($lastFailed) > strtotime('-15 minutes')) {
-        return false; // Midlertidig sperret
+   if ($failedAttempts >= 3 && $lastFailed && strtotime($lastFailed) > strtotime('-1 hour')) {
+    $_SESSION['auth_error'] = 'Kontoen er midlertidig sperret. Prøv igjen senere.';
+    return false; // Midlertidig sperret
     }
 
     // Sjekk passord

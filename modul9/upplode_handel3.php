@@ -47,7 +47,7 @@ $size = round(filesize($dest)/1024,2) . " KB";
 <head><meta charset="utf-8"><title>CV lastet opp</title></head>
 <body>
 <h1>CV lastet opp</h1>
-<p><a href="filer/<?php echo $user_id; ?>.pdf" target="_blank">Last ned CV</a></p>
+<p><a href="filer/<?php echo $user_id; ?>.pdf" target="_blank">Vis CV</a></p>
 <ul>
   <li>Filnavn: <?php echo $user_id; ?>.pdf</li>
   <li>Størrelse: <?php echo $size; ?></li>
