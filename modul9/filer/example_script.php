@@ -1,0 +1,1 @@
+<?php\n// Enkel testscript for å vise innholdstype\necho "Dette er en test PHP-fil\n";\n?>

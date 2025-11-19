@@ -1,0 +1,1 @@
+# Notater\n\nDette er en markdown-fil som brukes som eksempel.\n
