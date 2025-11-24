@@ -5,8 +5,8 @@
     <title>Modul 4</title>
 </head>
 <body>
-    <h1>Modul 4 bok kappitel 3 (side 85 til 105)</h1>
-    <h2>Innebygde funksjoner</h2>
+    <h1>Modul 4 bok kappitel 5 og 6 </h1>
+    <h2>atrise og skjemabehandling</h2>
     <h4>Spørsmål:</h4>
     <p>Hva er en funksjon?</p>
     <ul> 
